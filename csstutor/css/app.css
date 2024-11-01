@@ -1,0 +1,18 @@
+.brands-list {
+    overflow: hidden;
+  }
+  .wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rem;
+  
+    justify-items: stretch;
+  }
+  @keyframes scroll {
+    to {
+      translate: calc(-3 * 15rem);
+    }
+  }
+  .wrapper {
+    animation: scroll 10s linear infinite;
+  }
